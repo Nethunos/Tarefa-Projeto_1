@@ -6,54 +6,148 @@
 }
 
 header {
-    font-size: 24px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    padding: 16px 0;
+    color: chartreuse;
+}
+
+body, input, textarea {
+    font-family: "Courier Prime", monospace;
+    color: #b1b1b1;
+}
+
+header h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header .container nav {
+    font-family: "Courier Prime", monospace;
+    font-weight: 300;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+header nav li a {
+    color: chartreuse;
 }
 
 .container {
-    height: 35px;
-    margin: 10px 0 0 0;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.container nav li {
-    margin: 0 30px 0 0px;
-    display: inline;
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.container nav li a {
-    color: rgb(159, 253, 66);
+section .container {
+    align-items: flex-start;
 }
 
-.container nav ul {
-    text-align: center;
+section .container img {
+    height: 280px;
+    margin-right: 32px;
 }
 
 section {
-    margin-top: 50px;
+    padding: 10px 0;
 }
 
-div .home-about{
-    align-self: center;
+section h3 {
+    margin-bottom: 10px;
 }
 
-div h3 {
-    color: rgb(159, 253, 66);
-    text-align: center;
+section p {
+    margin-bottom: 5px;
 }
 
-div p {
-    color: white;
-    text-align: center;
+.education {
+   padding: 0 auto;
 }
 
-.home-about {
-    width: 1080px;
+.education h2 {
+    color: chartreuse;
 }
 
-.home-about img {
-    height: 250px;
-    margin: 0 auto;
+.experiences .container img {
+    height: 360px;
+}
+
+.experiences .container h2,
+.experiences .container li{
+    font-size: 18px;
+    margin-bottom: 8px;
+    width: 800px;
+}
+
+.experiences .container h2 {
+    color: chartreuse;
+    font-size: 22px;
+}
+
+#contact .container {
+    display: block;
+}
+
+.container h2 {
+    color:chartreuse;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}   
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    background-color: chartreuse;
+    color: black;
+    border: chartreuse;
+    font-family: "Pixelify Sans", sans-serif;;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b1b1b1;
+}
+
+form input {
+    border-color:#b1b1b1;
+}
+
+input:focus, textarea:focus {
+    outline-color: chartreuse;
+}
+
+footer {
+    background-color: chartreuse;
+    padding: 16px 0;
+    margin-top: 15px;
+}
+
+footer p {
+    background-color: chartreuse;
+    color: #000;
 }
